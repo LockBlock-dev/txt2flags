@@ -7,10 +7,25 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <label for="text">Your text:</label>
+        <h1>text2flags</h1>
+        <p>Convert text to Discord flags.</p>
+
+        <h3>Options:</h3>
+        <div class="option">
+            <label for="offset">Character offset</label>
+            <input type="range" id="offset" min="0" max="1" />
+            <label id="offset_value">0</label>
+        </div>
+
+        <label for="text"><h3>Your text:</h3></label>
         <textarea id="text"></textarea>
-        <label for="flags">Result:</label>
-        <textarea id="flags"></textarea>
+
+        <label for="result"><h3>Result:</h3></label>
+        <div class="stat">
+            <p>Flags count:</p>
+            <p id="count_value">0</p>
+        </div>
+        <textarea id="result"></textarea>
 
         <script type="module" src="flags.js"></script>
         <script type="module" src="index.js"></script>
